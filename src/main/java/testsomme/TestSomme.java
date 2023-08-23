@@ -1,8 +1,5 @@
 package testsomme;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.assertThat;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,6 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.assertThat;
 
 public class TestSomme
 {
@@ -27,7 +27,7 @@ public class TestSomme
 
 		driver = new FirefoxDriver();
 
-		driver.get("http://www.somme.test");
+		driver.get("http://localhost:3000/");
 
 		a = driver.findElement(By.id("a"));
 		b = driver.findElement(By.id("b"));

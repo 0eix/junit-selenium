@@ -1,6 +1,7 @@
 # eclipse project file
 .settings/
 .vscode/
+.idea
 bin/
 .classpath
 .project
