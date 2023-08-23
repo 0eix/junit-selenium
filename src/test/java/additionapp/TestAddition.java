@@ -23,7 +23,7 @@ public class TestAddition {
         System.setProperty("webdriver.gecko.driver", "src/test/java/drivers/geckodriver");
 
         driver = new FirefoxDriver();
-        driver.get("http://localhost:3000/");
+        driver.get("https://0eix.github.io/somme/");
 
         inputFieldA = driver.findElement(By.id("a"));
         inputFieldB = driver.findElement(By.id("b"));
